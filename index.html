@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course List</title>
+    <script>
+        function scrollToCourse(courseId) {
+            var course = document.getElementById(courseId);
+            window.scrollTo({
+                top: course.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</head>
+<body>
+    <h2>Course List</h2>
+    <nav>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('eng1101')">ENG 1101</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('eecs1011')">EECS 1011</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('math1013')">MATH 1013</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('math1025')">MATH 1025</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('phys1800')">PHYS 1800</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('eng1102')">ENG 1102</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('chem1100')">CHEM 1100</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('eecs1021')">EECS 1021</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('math1014')">MATH 1014</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('phys1801')">PHYS 1801</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToCourse('eecs1028')">EECS 1028</a></li>
+        </ul>
+    </nav>
+
+    <h3 onclick="scrollToCourse('eng1101')"> ENG 1101 - Ethics, Communication & Problem Solving</h3>
+    <p id="eng1101" class="course-content">
+        This will be your first ever ENG course, which will cover engineering ethics and case studies, communication and problem solving. Straightforward course, 
+        but quite time-consuming.
+        <br/><br/>
+        Difficulty: 3/10 (Easy).  
+    </p>
+
+    <h3 onclick="scrollToCourse('eecs1011')">EECS 1011 - Computational Thinking Through Mechatronics (MATLAB)</h3>
+    <p id="eecs1011" class="course-content">
+        This will be your very first programming class in your undergraduate studies, with a C-like programming language used by scientists and engineers called 
+        MATLAB (short for Matrix Laboratory). This course also assumes you never programmed before...
+        <br/><br/>
+        Difficulty: 2/10 if known at least one programming language, otherwise 4/10 (Easy).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('math1013')">MATH 1013 - Applied Calculus 1</h3>
+    <p id="math1013" class="course-content">
+        Behold your very first calculus course at university, which touches on differential calculus. It's basically review from high school calculus...
+        <br/><br/>
+        Difficulty: 5/10 (Medium).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('math1025')">MATH 1025 - Applied Linear Algebra</h3>
+    <p id="math1025" class="course-content">
+        You will learn about and apply linear algebra concepts such as matrices, vectors, linear transformations...
+        <br/><br/>
+        Difficulty: 5/10 (Medium).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('phys1800')">PHYS 1800 - Engineering Mechanics</h3>
+    <p id="phys1800" class="course-content">
+        This first physics course you will be taking may mostly be review of high school physics...
+        <br/><br/>
+        Difficulty: 6/10 (Medium).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('eng1102')">ENG 1102 - Engineering Design Principles</h3>
+    <p id="eng1102" class="course-content">
+        This ENG course will be your first design course...
+        <br/><br/>
+        Difficulty: 3/10 (Easy).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('chem1100')">CHEM 1100 - Chemistry & Materials Science</h3>
+    <p id="chem1100" class="course-content">
+        This is your first (and probably last) chemistry course in the program...
+        <br/><br/>
+        Difficulty: 6/10 (Medium).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('eecs1021')">EECS 1021 - OOP from Sensors to Actuators (Java)</h3>
+    <p id="eecs1021" class="course-content">
+        This is the same premise as EECS 1011, but you will be learning and using the Java programming language...
+        <br/><br/>
+        Difficulty: 4/10 (Medium).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('math1014')">MATH 1014 - Applied Calculus 2</h3>
+    <p id="math1014" class="course-content">
+        This is the hardest, but the most interesting calculus course in my opinion...
+        <br/><br/>
+        Difficulty: 7/10 (Hard).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('phys1801')">PHYS 1801 - Electricity, Magnetism and Optics</h3>
+    <p id="phys1801" class="course-content">
+        Just as the course title says, you will be learning about E&M and optics...
+        <br/><br/>
+        Difficulty: 6/10 (Medium).                    
+    </p>
+
+    <h3 onclick="scrollToCourse('eecs1028')">EECS 1028 - Discrete Mathematics for Engineers</h3>
+    <p id="eecs1028" class="course-content">
+        Let me introduce you to the most infamous course to every first year EECS engineering student...
+        <br/><br/>
+        Difficulty: 8/10 (Hard).                    
+    </p>
+</body>
+</html>
